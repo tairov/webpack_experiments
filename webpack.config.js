@@ -4,10 +4,17 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
 module.exports = {
-    entry: "./home",
+    context: __dirname + "/frontend",
+    entry: {
+        home: "./home",
+        about: "./about",
+        common: ["./welcome", "./common"]
+    },
+
     output: {
-        filename: "build.js",
-        library: "home"
+        path: __dirname + "/public",
+        filename: "[name].js",
+        library: "[name]"
     },
 
     watch: NODE_ENV == 'development',
@@ -19,11 +26,26 @@ module.exports = {
     /// FOR dev devtool: "eval"
     devtool: NODE_ENV == 'development' ? "source-map" : null,
     plugins: [
+        new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
             NODE_ENV: JSON.stringify(NODE_ENV),
-            LANG:     JSON.stringify('ru')
+            LANG: JSON.stringify('ru')
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "common"
         })
     ],
+
+    resolve: {
+        modulesDirectories: ['node_modules'],
+        extensions: ['', '.js']
+    },
+
+    resolveLoader: {
+        modulesDirectories: ['node_modules'],
+        moduleTemplates: ['*-loader', '*'],
+        extension: ['', '.js']
+    },
 
     module: {
         loaders: [
@@ -38,4 +60,17 @@ module.exports = {
             }
         ]
     }
+};
+
+
+if (NODE_ENV == 'production') {
+    module.exports.plugins.push(
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false,
+                drop_console: true,
+                unsafe: true
+            }
+        })
+    );
 }

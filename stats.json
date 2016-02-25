@@ -1,0 +1,379 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "1.12.14",
+  "hash": "83a818d76264f9a9e5ff",
+  "time": 1041,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "about": [
+      "about.js",
+      "about.js.map"
+    ],
+    "home": [
+      "home.js",
+      "home.js.map"
+    ],
+    "common": [
+      "common.js",
+      "common.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "about.js",
+      "size": 431,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js",
+      "size": 429,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "common.js",
+      "size": 4075,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "common"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "about.js.map",
+      "size": 332,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js.map",
+      "size": 329,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "common.js.map",
+      "size": 4186,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "common"
+      ],
+      "emitted": true
+    }
+  ],
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 270,
+      "names": [
+        "about"
+      ],
+      "files": [
+        "about.js",
+        "about.js.map"
+      ],
+      "hash": "ce966b3ce24bc3e6ee7a",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/about.js",
+          "name": "./about.js",
+          "index": 0,
+          "index2": 1,
+          "size": 270,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 508,
+            "building": 372,
+            "dependencies": 5
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)('home');\n\nexports.welcome = _welcome2.default;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/about.js",
+          "moduleIdentifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/about.js",
+          "moduleName": "./about.js",
+          "loc": "",
+          "name": "about",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 270,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js",
+        "home.js.map"
+      ],
+      "hash": "bc17a3784394c4dc7ad7",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+          "name": "./home.js",
+          "index": 2,
+          "index2": 2,
+          "size": 270,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 37,
+            "building": 814
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)('home');\n\nexports.welcome = _welcome2.default;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+          "moduleIdentifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+          "moduleName": "./home.js",
+          "loc": "",
+          "name": "home",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 269,
+      "names": [
+        "common"
+      ],
+      "files": [
+        "common.js",
+        "common.js.map"
+      ],
+      "hash": "4b4264f8159c90c4fa18",
+      "parents": [],
+      "modules": [
+        {
+          "id": 1,
+          "identifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/welcome.js",
+          "name": "./welcome.js",
+          "index": 1,
+          "index2": 0,
+          "size": 269,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "issuer": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+          "profile": {
+            "factory": 41,
+            "building": 56
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+              "module": "./home.js",
+              "moduleName": "./home.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:15-35"
+            },
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/about.js",
+              "module": "./about.js",
+              "moduleName": "./about.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:15-35"
+            }
+          ],
+          "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nexports.default = function (message) {\n\n    if (NODE_ENV == 'development') {\n        console.log(message);\n    }\n    // let yy = process.env.USER;\n\n    alert('Welcome ' + message);\n};\n\n;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/about.js",
+      "name": "./about.js",
+      "index": 0,
+      "index2": 1,
+      "size": 270,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 508,
+        "building": 372,
+        "dependencies": 5
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)('home');\n\nexports.welcome = _welcome2.default;"
+    },
+    {
+      "id": 0,
+      "identifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+      "name": "./home.js",
+      "index": 2,
+      "index2": 2,
+      "size": 270,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 37,
+        "building": 814
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "'use strict';\n\nvar _welcome = require('./welcome');\n\nvar _welcome2 = _interopRequireDefault(_welcome);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n(0, _welcome2.default)('home');\n\nexports.welcome = _welcome2.default;"
+    },
+    {
+      "id": 1,
+      "identifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/welcome.js",
+      "name": "./welcome.js",
+      "index": 1,
+      "index2": 0,
+      "size": 269,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "issuer": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+      "profile": {
+        "factory": 41,
+        "building": 56
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/home.js",
+          "module": "./home.js",
+          "moduleName": "./home.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:15-35"
+        },
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/home/atairov/projects/webpack/node_modules/babel-loader/index.js?{\"presets\":[\"es2015\"],\"plugins\":[\"transform-runtime\"]}!/home/atairov/projects/webpack/frontend/about.js",
+          "module": "./about.js",
+          "moduleName": "./about.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:15-35"
+        }
+      ],
+      "source": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nexports.default = function (message) {\n\n    if (NODE_ENV == 'development') {\n        console.log(message);\n    }\n    // let yy = process.env.USER;\n\n    alert('Welcome ' + message);\n};\n\n;"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
