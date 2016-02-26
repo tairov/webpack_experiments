@@ -6,13 +6,15 @@ const webpack = require('webpack');
 module.exports = {
     context: __dirname + "/frontend",
     entry: {
-        app: "./app"
+        home: "./home",
+        about: "./about",
+        common: ["./welcome", "./common"]
     },
 
     output: {
         path: __dirname + "/public",
-        publicPath: "/",
-        filename: "[name].js"
+        filename: "[name].js",
+        library: "[name]"
     },
 
     watch: NODE_ENV == 'development',
@@ -25,6 +27,13 @@ module.exports = {
     devtool: NODE_ENV == 'development' ? "source-map" : null,
     plugins: [
         new webpack.NoErrorsPlugin(),
+        new webpack.DefinePlugin({
+            NODE_ENV: JSON.stringify(NODE_ENV),
+            LANG: JSON.stringify('ru')
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "common"
+        })
     ],
 
     resolve: {
