@@ -3,6 +3,7 @@
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
+
 module.exports = {
     context: __dirname + "/frontend",
     entry: {
@@ -11,7 +12,7 @@ module.exports = {
 
     output: {
         path: __dirname + "/public",
-        publicPath: "/",
+        publicPath: "",
         filename: "[name].js"
     },
 
@@ -22,7 +23,7 @@ module.exports = {
     },
 
     /// FOR dev devtool: "eval"
-    devtool: NODE_ENV == 'development' ? "source-map" : null,
+    // devtool: NODE_ENV == 'development' ? "source-map" : null,
     plugins: [
         new webpack.NoErrorsPlugin(),
     ],
@@ -50,9 +51,13 @@ module.exports = {
                 }
             }
         ]
+    },
+
+    devServer: {
+        host: 'localhost',
+        port: '8080'
     }
 };
-
 
 if (NODE_ENV == 'production') {
     module.exports.plugins.push(
